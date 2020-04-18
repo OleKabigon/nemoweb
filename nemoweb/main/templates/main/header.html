@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    {% load static %}
+    <meta charset="utf-8">
+    <title>Sentdex tutorial</title>
+    <meta name="description" content="Sentdex Django tutorial">
+    <meta name="robots" content="index,follow">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'tinymce/css/prism.css' %}">
+    <link rel="stylesheet" href="{% static 'main/css/materialize.css' %}">
+    <!-- Compiled and minified CSS -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"> -->
+
+</head>
+
+<body>
+    <nav>
+        <div class="nav-wrapper">
+            <a href="/" class="brand-logo">Tutorials</a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="/">Home</a></li>
+                <li><a href="/register">Register</a></li>
+                <li><a href="/login">Login</a></li>
+                <li><a href="/admin">Admin</a></li>
+
+            </ul>
+        </div>
+    </nav>
+
+    {% block content %}
+    {% endblock content %}
+
+
+</body>
+<script src="{% static 'tinymce/js/prism.js' %}">
+</script>
+<!-- Compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+</html>
