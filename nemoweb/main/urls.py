@@ -21,5 +21,6 @@ app_name = "main"
 
 urlpatterns = [
     # path('admin/', admin.site.urls),
-    path("", views.homepage, name="hompage"),
+    path("", views.homepage, name="homepage"),
+    path("register", views.register, name="register")
 ]
